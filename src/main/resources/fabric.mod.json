@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "nivekutility",
+  "version": "${version}",
+  "name": "Nivek Utility",
+  "description": "Ferramentas de qualidade de vida para Survival: Tree Capitator, Vein Miner, 3x3, organizador, agricultura, waypoints, HUD, tochas e assistente de crafting.",
+  "authors": ["Nivek"],
+  "license": "All-Rights-Reserved",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["dev.nivek.utility.NivekUtility"],
+    "client": ["dev.nivek.utility.client.NivekUtilityClient"]
+  },
+  "mixins": ["nivekutility.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
